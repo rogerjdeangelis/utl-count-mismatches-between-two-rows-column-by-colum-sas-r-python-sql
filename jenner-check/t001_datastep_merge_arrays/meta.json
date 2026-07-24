@@ -1,0 +1,7 @@
+{
+  "bundle": "t001_datastep_merge_arrays",
+  "source_file": "utl-count-mismatches-between-two-rows-column-by-colum-sas-r-python-sql.sas",
+  "source_blob_sha": "ac8cb286782f18e54cd2239da4b2283c245057fa",
+  "source_commit": "d589ba2551d6b29d0b2c8f8759ae74cb7bbeef10",
+  "notes": "Solution 1 from the file: a DATA step that MERGEs the id=1 and id=2 rows of sd1.have (renaming x1-x8 to y1-y8), then walks paired columns with an ARRAY, using NMISS() to skip pairs containing a missing value and computing the mismatch fraction per group. Verbatim author logic; the only adaptation is pointing libname sd1 at the bundle dir and seeding sd1.have from the author's cards4 values in autoexec, plus a PROC PRINT to surface WORK.WANT. Output GRP1=0.28571, GRP2=0.14286 matches the author's documented result."
+}
